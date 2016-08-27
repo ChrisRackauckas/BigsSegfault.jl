@@ -1,7 +1,7 @@
 # BigsSegfault
 
-This is a Julia repository to share a segfaulting problem. It's pretty simple,
-to cause the segfault, just do
+This is a Julia repository to share a segfaulting problem. See the [JuliaLang issue on this topic](https://github.com/ChrisRackauckas/BigsSegfault.jl/edit/master/README.md).
+It's pretty simple to cause the segfault: just do
 
 ```julia
 Pkg.clone("https://github.com/ChrisRackauckas/BigsSegfault.jl")
@@ -50,4 +50,5 @@ current process, but the window has to be closed and re-opened).
 
 This segfault problem also happens with inlined Rational{BigInt}, generic functions,
 and more. For more examples, check out the tests which are commented out in
-DifferentialEquations.jl with the mention "Bigs problem".
+DifferentialEquations.jl with the mention "Bigs problem". Another example of this
+issue [can be found on julia-users](https://groups.google.com/forum/#!topic/julia-users/cSliYJ-a_wE).
